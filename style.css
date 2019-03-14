@@ -1,3 +1,8 @@
+
+.sr-icons {
+    color: rgb(41, 47, 109);
+}
+
 .portfolio-box {
     position: relative;
     display: block;
@@ -61,8 +66,24 @@
     }
 }
 
+.col-centered {
+    display: inline-block;
+    float: none;
+    text-align: left;
+    margin-right: -4px;
+    text-align: center;
+}
+
+.btn-derecha {
+    margin-left: 25px;
+}
+
 section {
     padding: 8rem 0;
+}
+
+h1,h2,h3{
+    color: rgb(41, 47, 109);
 }
 
 .text-primary {
@@ -258,6 +279,13 @@ h1 {
     text-transform: uppercase;
     border: none;
     border-radius: 300px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.btn-list {
+    font-weight: 700;
+    padding: 10px;
+    border: none;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
