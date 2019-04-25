@@ -1,226 +1,258 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="js/navbar.js"></script>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container">
-               <a href="/" id="logo1" class="navbar-brand" style="display: none"><img src="https://firebasestorage.googleapis.com/v0/b/inter-8999f.appspot.com/o/Marcas%20UPB-07.png?alt=media&token=f0be8581-a970-41d5-80a5-fc3a6d2df0a2" style="height: 60px;"></a>
-               <a href="/" id="logo2" class="navbar-brand"><img src="https://firebasestorage.googleapis.com/v0/b/inter-8999f.appspot.com/o/MARCAS.png?alt=media&token=750702a9-88ad-40bb-ba97-65468fc38d0e" style="height: 60px;"></a>
-               <button class="navbar-toggler navbar-toggler-right" (click)="toggleNavbar()" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarResponsive">
-                  <ul class="navbar-nav ml-auto">
-                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="">
-                           <p class="elemento-navbar">Inicio</p>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/programas">
-                           <p class="elemento-navbar">Programas internacionales</p>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/convenios">
-                           <p class="elemento-navbar">Convenios</p>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/membresias">
-                           <p class="elemento-navbar">Membresías</p>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/actividades">
-                           <p class="elemento-navbar">Actividades</p>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/contacto">
-                           <p class="elemento-navbar">Contacto</p>
-                        </a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-        </nav>
 
-        <div id="video-background">
-            <section id="background-section" class="masthead text-center text-white d-flex">
-                <div class="container my-auto">
-                    <div class="row">
-                        <div class="col-md-10 mx-auto">
-                            <h1 class="text-uppercase text-white">
-                                <strong>INTERNACIONALIZACIÓN<br>POSTGRADO UPB</strong>
-                            </h1>
-                            <hr class="light my-4">
-                        </div>
-                        <div class="col-md-8 mx-auto mb-5">
-                            <a pageScroll class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Aprende más</a>
-                        </div>
-                    </div>
-                    <button id="botonSonido" class="fas fa-music fa-2x"></button>
-                </div>
-            </section>
-            <div class="fullscreen-bg">
-                <video id="mi-video" loop autoplay muted class="fullscreen">
-                    <source src="https://firebasestorage.googleapis.com/v0/b/inter-8999f.appspot.com/o/Bolivia%20te%20Espera%20(HD).mp4?alt=media&token=012ec6a6-e2f5-4a62-bc99-df4e3a659000"
-                        type="video/mp4">
-                </video>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/navbar.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a href="/" id="logo1" class="navbar-brand" style="display: none"><img
+                    src="https://firebasestorage.googleapis.com/v0/b/inter-8999f.appspot.com/o/Marcas%20UPB-07.png?alt=media&token=f0be8581-a970-41d5-80a5-fc3a6d2df0a2"
+                    style="height: 60px;"></a>
+            <a href="/" id="logo2" class="navbar-brand"><img
+                    src="https://firebasestorage.googleapis.com/v0/b/inter-8999f.appspot.com/o/MARCAS.png?alt=media&token=750702a9-88ad-40bb-ba97-65468fc38d0e"
+                    style="height: 60px;"></a>
+            <button class="navbar-toggler navbar-toggler-right" (click)="toggleNavbar()" type="button"
+                data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="">
+                            <p class="elemento-navbar">Inicio</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="programas-internacionales.html">
+                            <p class="elemento-navbar">Programas internacionales</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/convenios">
+                            <p class="elemento-navbar">Convenios</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/membresias">
+                            <p class="elemento-navbar">Membresías</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/actividades">
+                            <p class="elemento-navbar">Actividades</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/contacto">
+                            <p class="elemento-navbar">Contacto</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <section class="bg-primary" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <h2 class="section-heading text-white">Tenemos lo que necesitas</h2>
-                        <hr class="light my-4">
-                        <p class="text-faded mb-4">Convenios para impartir maestrías de doble titulación, intercambio de docentes y estudiantes, asesoramiento académico entre otras cláusulas particulares con cada una de las universidades socias. Asimismo, la UPB es miembro activo de asociaciones
-                            que agrupan a las principales escuelas de negocios de Latinoamérica y Europa.</p>
-                        <a pageScroll class="btn btn-light btn-xl js-scroll-trigger" style="color: rgb(41,47,109)" href="#services">¡Empieza ahora!</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="masthead text-center text-white d-flex" style="height: 800px;background-image: url(http://www.clker.com/cliparts/O/w/K/n/d/f/blue-map.svg);">
+    <div id="video-background">
+        <section id="background-section" class="masthead text-center text-white d-flex">
             <div class="container my-auto">
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <h1 class="text-uppercase text-white">
+                            <strong>INTERNACIONALIZACIÓN<br>POSTGRADO UPB</strong>
+                        </h1>
+                        <hr class="light my-4">
+                    </div>
+                    <div class="col-md-8 mx-auto mb-5">
+                        <a pageScroll class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Aprende más</a>
+                    </div>
+                </div>
+                <button id="botonSonido" class="fas fa-music fa-2x"></button>
             </div>
         </section>
-        
-        <section id="services">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">A tu servicio</h2>
-                        <hr class="my-4">
+        <div class="fullscreen-bg">
+            <video id="mi-video" loop autoplay muted class="fullscreen">
+                <source
+                    src="https://firebasestorage.googleapis.com/v0/b/inter-8999f.appspot.com/o/Bolivia%20te%20Espera%20(HD).mp4?alt=media&token=012ec6a6-e2f5-4a62-bc99-df4e3a659000"
+                    type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading text-white">Tenemos lo que necesitas</h2>
+                    <hr class="light my-4">
+                    <p class="text-faded mb-4">Convenios para impartir maestrías de doble titulación, intercambio de
+                        docentes y estudiantes, asesoramiento académico entre otras cláusulas particulares con cada una
+                        de las universidades socias. Asimismo, la UPB es miembro activo de asociaciones
+                        que agrupan a las principales escuelas de negocios de Latinoamérica y Europa.</p>
+                    <a pageScroll class="btn btn-light btn-xl js-scroll-trigger" style="color: rgb(41,47,109)"
+                        href="#services">¡Empieza ahora!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="masthead text-center text-white d-flex"
+        style="height: 800px;background-image: url(http://www.clker.com/cliparts/O/w/K/n/d/f/blue-map.svg);">
+        <div class="container my-auto">
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">A tu servicio</h2>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i id="icono_programas_internacionales"
+                            class="fa fa-4x far fa-list-alt text-primary mb-3 sr-icons"></i>
+                        <h3 class="mb-3"><a href="/programas">Programas internacionales</a></h3>
+                        <p class="text-muted mb-0">Diseñados para desarrollar profesionales con visión global.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i id="icono_convenios" class="fa fa-4x far fa-handshake text-primary mb-3 sr-icons"></i>
+                        <h3 class="mb-3"><a href="/convenios">Convenios</a></h3>
+                        <p class="text-muted mb-0">Las universidades que nos apoyan en nuestros programas.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i id="icono_membresias" class="fa fa-4x fas fa-globe text-primary mb-3 sr-icons"></i>
+                        <h3 class="mb-3"><a href="/membresias">Membresías</a></h3>
+                        <p class="text-muted mb-0">Revisa nuestras últimas membresías.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i id="icono_actividades" class="fa fa-4x far fa-newspaper text-primary mb-3 sr-icons"></i>
+                        <h3 class="mb-3"><a href="/actividades">Actividades internacionales</a></h3>
+                        <p class="text-muted mb-0">La actualidad de nuestra universidad.</p>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="service-box mt-5 mx-auto">
-                            <i ngsReveal class="fa fa-4x far fa-list-alt text-primary mb-3 sr-icons"></i>
-                            <h3 class="mb-3"><a href="/programas">Programas internacionales</a></h3>
-                            <p class="text-muted mb-0">Diseñados para desarrollar profesionales con visión global.</p>
+        </div>
+    </section>
+    <section class="p-0" id="portfolio">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="http://www.upb.edu/es/contenido/mba-negocios-digitales">
+                        <img class="img-fluid"
+                            src="https://www.abc.es/media/espana/2018/04/20/vista-upv-valencia-k70H--620x349@abc.jpg"
+                            alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Programa internacional
+                                </div>
+                                <div class="project-name">
+                                    Universitat Politècnica de València
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="service-box mt-5 mx-auto">
-                            <i ngsReveal class="fa fa-4x far fa-handshake text-primary mb-3 sr-icons"></i>
-                            <h3 class="mb-3"><a href="/convenios">Convenios</a></h3>
-                            <p class="text-muted mb-0">Las universidades que nos apoyan en nuestros programas.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="service-box mt-5 mx-auto">
-                            <i ngsReveal class="fa fa-4x fas fa-globe text-primary mb-3 sr-icons"></i>
-                            <h3 class="mb-3"><a href="/membresias">Membresías</a></h3>
-                            <p class="text-muted mb-0">Revisa nuestras últimas membresías.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="service-box mt-5 mx-auto">
-                            <i ngsReveal class="fa fa-4x far fa-newspaper text-primary mb-3 sr-icons"></i>
-                            <h3 class="mb-3"><a href="/actividades">Actividades internacionales</a></h3>
-                            <p class="text-muted mb-0">La actualidad de nuestra universidad.</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
-            </div>
-        </section>
-        <section class="p-0" id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row no-gutters popup-gallery">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="http://www.upb.edu/es/contenido/mba-negocios-digitales">
-                            <img class="img-fluid" src="https://www.abc.es/media/espana/2018/04/20/vista-upv-valencia-k70H--620x349@abc.jpg" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Programa internacional
-                                    </div>
-                                    <div class="project-name">
-                                        Universitat Politècnica de València
-                                    </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="https://www.fgcu.edu/">
+                        <img class="img-fluid"
+                            src="https://www.abc.es/media/espana/2018/04/20/vista-upv-valencia-k70H--620x349@abc.jpg"
+                            alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Programa internacional
+                                </div>
+                                <div class="project-name">
+                                    Florida Gulf Coast University
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="https://www.fgcu.edu/">
-                            <img class="img-fluid" src="https://www.abc.es/media/espana/2018/04/20/vista-upv-valencia-k70H--620x349@abc.jpg" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Programa internacional
-                                    </div>
-                                    <div class="project-name">
-                                        Florida Gulf Coast University
-                                    </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="http://www.sias.edu.cn/">
+                        <img class="img-fluid"
+                            src="https://www.abc.es/media/espana/2018/04/20/vista-upv-valencia-k70H--620x349@abc.jpg"
+                            alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Programa internacional
+                                </div>
+                                <div class="project-name">
+                                    SIAS International University
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="http://www.sias.edu.cn/">
-                            <img class="img-fluid" src="https://www.abc.es/media/espana/2018/04/20/vista-upv-valencia-k70H--620x349@abc.jpg" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Programa internacional
-                                    </div>
-                                    <div class="project-name">
-                                        SIAS International University
-                                    </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="http://www.upb.edu/es/contenido/capstone-course">
+                        <img class="img-fluid"
+                            src="https://www.incae.edu/sites/default/files/styles/slideshow-un-medio/public/primerdiamba2010_122_0.jpg?itok=ysToSwVZ"
+                            alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Programa internacional
+                                </div>
+                                <div class="project-name">
+                                    INCAE
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="http://www.upb.edu/es/contenido/capstone-course">
-                            <img class="img-fluid" src="https://www.incae.edu/sites/default/files/styles/slideshow-un-medio/public/primerdiamba2010_122_0.jpg?itok=ysToSwVZ" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Programa internacional
-                                    </div>
-                                    <div class="project-name">
-                                        INCAE
-                                    </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="https://www.esan.edu.pe/semana-internacional/finances/index.php">
+                        <img class="img-fluid"
+                            src="https://img.gestion.pe/files/article_content_ge_fotos/uploads/2018/07/31/5b60e39a7f806.jpeg"
+                            alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Programa internacional
+                                </div>
+                                <div class="project-name">
+                                    ESAN
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="https://www.esan.edu.pe/semana-internacional/finances/index.php">
-                            <img class="img-fluid" src="https://img.gestion.pe/files/article_content_ge_fotos/uploads/2018/07/31/5b60e39a7f806.jpeg" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Programa internacional
-                                    </div>
-                                    <div class="project-name">
-                                        ESAN
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
+                        </div>
+                    </a>
+                </div>
+
                 <div class="col-lg-4 col-sm-6">
                     <a class="portfolio-box" href="http://www.upb.edu/es/madeusach">
                         <img class="img-fluid" src="http://lanacion.cl/wp-content/uploads/2018/02/usach.jpg" alt="">
@@ -236,48 +268,66 @@
                         </div>
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="masthead text-center text-white d-flex"
+        style="height: 800px;background-image: url(http://www.clker.com/cliparts/O/w/K/n/d/f/blue-map.svg);">
+        <div class="container my-auto">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <br><br>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    height: 100vh;
+                    min-height: 650px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    }
+
+                    section.masthead h1 {
+                    font-size: 3rem;
+                    }
+                    }
+
+                    @media (min-width: 1200px) {
+                    section.masthead h1 {
+                    <h2 class="section-heading">Contacto</h2>
+                    <hr class="my-4">
+                    <address class="mb-5">Campus UPB. Cochabamba, Bolivia.<br>Edificio postgrado en el tercer piso,
+                        I oficina de internacionalización.<br>Av. Capitán Ustariz Km. 6,5.</address>
                 </div>
             </div>
-        </section>
-        <section class="masthead text-center text-white d-flex" style="height: 800px;background-image: url(http://www.clker.com/cliparts/O/w/K/n/d/f/blue-map.svg);">
-            <div class="container my-auto">
-            </div>
-        </section>
-
-        <footer>
-            <div class="container">
-               <br><br>
-               <div class="row">
-                  <div class="col-lg-8 mx-auto text-center">
-                     <h2 class="section-heading">Contacto</h2>
-                     <hr class="my-4">
-                     <address class="mb-5">Campus UPB. Cochabamba, Bolivia.<br>Edificio postgrado en el tercer piso, oficina de internacionalización.<br>Av. Capitán Ustariz Km. 6,5.</address>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-lg-4 ml-auto text-center">
-                     <i ngsReveal class="fa fas fa-address-card fa-3x mb-3 sr-contact"></i>
-                     <p>Sergio García Agreda Ph.D.</p>
-                     <p>Director de internacionalización postgrado</p>
-                  </div>
-                  <div class="col-lg-4 ml-auto text-center">
-                     <i ngsReveal class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-                     <p>+591 775-19190</p>
-                  </div>
-                  <div class="col-lg-4 mr-auto text-center">
-                     <i ngsReveal class="fa fas fa-envelope fa-3x mb-3 sr-contact"></i>
-                     <p>
+            <div class="row">
+                <div class="col-lg-4 ml-auto text-center">
+                    <i ngsReveal class="fa fas fa-address-card fa-3x mb-3 sr-contact"></i>
+                    <p>Sergio García Agreda Ph.D.</p>
+                    <p>Director de internacionalización postgrado</p>
+                </div>
+                <div class="col-lg-4 ml-auto text-center">
+                    <i ngsReveal class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+                    <p>+591 775-19190</p>
+                </div>
+                <div class="col-lg-4 mr-auto text-center">
+                    <i ngsReveal class="fa fas fa-envelope fa-3x mb-3 sr-contact"></i>
+                    <p>
                         <a href="sergiogarciaagreda@upb.edu">sgarciaagreda@upb.edu</a>
-                     </p>
-                  </div>
-               </div>
-               <br><br><br><br>
+                    </p>
+                </div>
             </div>
-            <div class="py-5 bg-dark">
-               <div class="container">
-                  <p class="m-0 text-center text-white">Copyright &copy; UPB 2018</p>
-               </div>
+            <br><br><br><br>
+        </div>
+        <div class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; UPB 2019</p>
             </div>
-         </footer>
-    </body>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
 </html>

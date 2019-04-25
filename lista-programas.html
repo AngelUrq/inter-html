@@ -1,119 +1,135 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
-            <div class="container">
-               <a href="/" id="logo1" class="navbar-brand"><img src="https://firebasestorage.googleapis.com/v0/b/inter-8999f.appspot.com/o/Marcas%20UPB-07.png?alt=media&token=f0be8581-a970-41d5-80a5-fc3a6d2df0a2" style="height: 60px;"></a>
-               <button class="navbar-toggler navbar-toggler-right" (click)="toggleNavbar()" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarResponsive">
-                  <ul class="navbar-nav ml-auto">
-                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="">
-                           <p class="elemento-navbar" style="color: rgb(41,47,109)">Inicio</p>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/programas">
-                           <p class="elemento-navbar" style="color: rgb(41,47,109)">Programas internacionales</p>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/convenios">
-                           <p class="elemento-navbar" style="color: rgb(41,47,109)">Convenios</p>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/membresias">
-                           <p class="elemento-navbar" style="color: rgb(41,47,109)">Membresías</p>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/actividades">
-                           <p class="elemento-navbar" style="color: rgb(41,47,109)">Actividades</p>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/contacto">
-                           <p class="elemento-navbar" style="color: rgb(41,47,109)">Contacto</p>
-                        </a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-        </nav>
 
-        <div class="container" style="margin-top: 95px">
-            <h1>Programas de doble titulación</h1>
-        </div>
-        
-        <div class="container">
-            <div class="card mb-4">
-                <a href="http://www.upb.edu/es/contenido/mba-negocios-digitales">
-                    <img class="card-img-top" src="images/programas/mba.jpg">
-                </a>
-            </div>
-        </div>
-        <div class="container">
-            <div class="card mb-4">
-                <a href="http://www.upb.edu/es/madeusach">
-                    <img class="card-img-top" src="images/programas/made.jpg">
-                </a>
-            </div>
-        </div>
-        <div class="container">
-            <div class="card mb-4">
-                <a href="http://www.upb.edu/es/contenido/global-executive-program">
-                    <img class="card-img-top" src="images/programas/gemba.jpg">
-                </a>
-            </div>
-        </div>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+   </script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+   </script>
+</head>
 
-        <footer>
-            <div class="container">
-               <br><br>
-               <div class="row">
-                  <div class="col-lg-8 mx-auto text-center">
-                     <h2 class="section-heading">Contacto</h2>
-                     <hr class="my-4">
-                     <address class="mb-5">Campus UPB. Cochabamba, Bolivia.<br>Edificio postgrado en el tercer piso, oficina de internacionalización.<br>Av. Capitán Ustariz Km. 6,5.</address>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-lg-4 ml-auto text-center">
-                     <i ngsReveal class="fa fas fa-address-card fa-3x mb-3 sr-contact"></i>
-                     <p>Sergio García Agreda Ph.D.</p>
-                     <p>Director de internacionalización postgrado</p>
-                  </div>
-                  <div class="col-lg-4 ml-auto text-center">
-                     <i ngsReveal class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-                     <p>+591 775-19190</p>
-                  </div>
-                  <div class="col-lg-4 mr-auto text-center">
-                     <i ngsReveal class="fa fas fa-envelope fa-3x mb-3 sr-contact"></i>
-                     <p>
-                        <a href="sergiogarciaagreda@upb.edu">sgarciaagreda@upb.edu</a>
-                     </p>
-                  </div>
-               </div>
-               <br><br><br><br>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+      <div class="container">
+         <a href="/" id="logo1" class="navbar-brand"><img
+               src="https://firebasestorage.googleapis.com/v0/b/inter-8999f.appspot.com/o/Marcas%20UPB-07.png?alt=media&token=f0be8581-a970-41d5-80a5-fc3a6d2df0a2"
+               style="height: 60px;"></a>
+         <button class="navbar-toggler navbar-toggler-right" (click)="toggleNavbar()" type="button"
+            data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="">
+                     <p class="elemento-navbar" style="color: rgb(41,47,109)">Inicio</p>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/programas">
+                     <p class="elemento-navbar" style="color: rgb(41,47,109)">Programas internacionales</p>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/convenios">
+                     <p class="elemento-navbar" style="color: rgb(41,47,109)">Convenios</p>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/membresias">
+                     <p class="elemento-navbar" style="color: rgb(41,47,109)">Membresías</p>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/actividades">
+                     <p class="elemento-navbar" style="color: rgb(41,47,109)">Actividades</p>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/contacto">
+                     <p class="elemento-navbar" style="color: rgb(41,47,109)">Contacto</p>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+   <div class="container" style="margin-top: 95px">
+      <h1>Programas de doble titulación</h1>
+   </div>
+
+   <div class="container">
+      <div class="card mb-4">
+         <a href="http://www.upb.edu/es/contenido/mba-negocios-digitales">
+            <img class="card-img-top" src="images/programas/mba.jpg">
+         </a>
+      </div>
+   </div>
+   <div class="container">
+      <div class="card mb-4">
+         <a href="http://www.upb.edu/es/madeusach">
+            <img class="card-img-top" src="images/programas/made.jpg">
+         </a>
+      </div>
+   </div>
+   <div class="container">
+      <div class="card mb-4">
+         <a href="http://www.upb.edu/es/contenido/global-executive-program">
+            <img class="card-img-top" src="images/programas/gemba.jpg">
+         </a>
+      </div>
+   </div>
+
+   <footer>
+      <div class="container">
+         <br><br>
+         <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+               <h2 class="section-heading">Contacto</h2>
+               <hr class="my-4">
+               <address class="mb-5">Campus UPB. Cochabamba, Bolivia.<br>Edificio postgrado en el tercer piso, oficina
+                  de internacionalización.<br>Av. Capitán Ustariz Km. 6,5.</address>
             </div>
-            <div class="py-5 bg-dark">
-               <div class="container">
-                  <p class="m-0 text-center text-white">Copyright &copy; UPB 2018</p>
-               </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-4 ml-auto text-center">
+               <i ngsReveal class="fa fas fa-address-card fa-3x mb-3 sr-contact"></i>
+               <p>Sergio García Agreda Ph.D.</p>
+               <p>Director de internacionalización postgrado</p>
             </div>
-         </footer>
-    </body>
+            <div class="col-lg-4 ml-auto text-center">
+               <i ngsReveal class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+               <p>+591 775-19190</p>
+            </div>
+            <div class="col-lg-4 mr-auto text-center">
+               <i ngsReveal class="fa fas fa-envelope fa-3x mb-3 sr-contact"></i>
+               <p>
+                  <a href="sergiogarciaagreda@upb.edu">sgarciaagreda@upb.edu</a>
+               </p>
+            </div>
+         </div>
+         <br><br><br><br>
+      </div>
+      <div class="py-5 bg-dark">
+         <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; UPB 2018</p>
+         </div>
+      </div>
+   </footer>
+</body>
+
 </html>
