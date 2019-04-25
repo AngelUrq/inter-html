@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .sr-icons {
     color: rgb(41, 47, 109);
 }
@@ -267,6 +271,15 @@ h1 {
     position: absolute;
     top: 90vh;
     right: 5%;
+}
+
+#botonIdioma {
+    background-color: transparent;
+    color: white;
+    border: 0px transparent;
+    position: absolute;
+    top: 90vh;
+    left: 5%;
 }
 
 #botonSonido:focus {
