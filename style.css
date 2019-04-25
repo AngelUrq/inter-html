@@ -393,3 +393,20 @@ h1 {
         color: #F05F40;
     }
 }
+
+#mainActividades {
+    padding: 0px 10px;
+    margin-top: 75px;
+}
+
+.fas {
+    padding: 10px;
+}
+
+.sr-icons {
+    color: rgb(41, 47, 109);
+}
+
+#actividades{
+    color: rgb(41, 47, 109);
+}
