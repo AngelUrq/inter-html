@@ -427,3 +427,17 @@ h1 {
 #actividades{
     color: rgb(41, 47, 109);
 }
+
+.event{
+    width: 700px;
+    height: 900px;
+}
+
+.principal{
+    padding-top: 100px;
+}
+
+.image{
+    width: 700px;
+    height: 300px;
+}
