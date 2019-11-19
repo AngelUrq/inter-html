@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a href="index.html" id="logo1" class="navbar-brand"
+          ><img
+            src="https://firebasestorage.googleapis.com/v0/b/inter-8999f.appspot.com/o/Marcas%20UPB-07.png?alt=media&token=f0be8581-a970-41d5-80a5-fc3a6d2df0a2"
+            style="height: 60px;"
+        /></a>
+
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          (click)="toggleNavbar()"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">
+                <p class="elemento-navbar" style="color: rgb(41,47,109)">
+                  Inicio
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link js-scroll-trigger"
+                href="programas-internacionales.html"
+              >
+                <p class="elemento-navbar" style="color: rgb(41,47,109)">
+                  Programas<br />internacionales
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="convenios.html">
+                <p class="elemento-navbar" style="color: rgb(41,47,109)">
+                  Convenios
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="membresias.html">
+                <p class="elemento-navbar" style="color: rgb(41,47,109)">
+                  Membresías
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="actividades.html">
+                <p class="elemento-navbar" style="color: rgb(41,47,109)">
+                  Actividades
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="margin-top: 100px;">
+      <h2>Sedes</h2>
+      <hr />
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://i1.wp.com/www.aden.org/files/2017/07/aden-panama-miniatura-550x400.jpg?ssl=1"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://i2.wp.com/www.aden.org/files/2017/07/aden-bogota-miniatura-550x400.jpg?zoom=1.25&ssl=1"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://i0.wp.com/www.aden.org/files/2017/04/aden-costa-rica-miniatura-550x400.jpg?ssl=1"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin:auto">
+      <iframe
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Funiversidad.privada.boliviana%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        width="500"
+        height="500"
+        style="border:none;overflow:hidden"
+        scrolling="no"
+        frameborder="0"
+        allowTransparency="true"
+        allow="encrypted-media"
+      ></iframe>
+    </div>
+    
+    <footer>
+      <div class="container">
+        <br /><br />
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Contacto</h2>
+            <hr class="my-4" />
+            <address class="mb-5">
+              Campus UPB. Cochabamba, Bolivia.<br />Edificio postgrado en el
+              segundo piso, oficina de internacionalización.<br />Av. Capitán
+              Ustariz Km. 6,5.
+            </address>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i
+              ngsReveal
+              class="fa fas fa-address-card fa-3x mb-3 sr-contact"
+            ></i>
+            <p>Sergio García Agreda Ph.D.</p>
+            <p>Director de internacionalización postgrado</p>
+          </div>
+          <div class="col-lg-4 ml-auto text-center">
+            <i ngsReveal class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+            <p>+591 775-19190</p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i ngsReveal class="fa fas fa-envelope fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="sergiogarciaagreda@upb.edu">sgarciaagreda@upb.edu</a>
+            </p>
+          </div>
+        </div>
+        <br /><br /><br /><br />
+      </div>
+      <div class="py-5 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright &copy; UPB 2019</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

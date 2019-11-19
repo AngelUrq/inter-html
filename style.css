@@ -236,7 +236,7 @@ body {
     font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 
-hr {
+.hr-esp {
     max-width: 50px;
     border-width: 3px;
     border-color: rgb(41, 47, 109);
@@ -294,12 +294,14 @@ h1 {
     color: rgb(188, 199, 39);
 }
 
-.btn {
+.btn-prin {
     font-weight: 700;
     text-transform: uppercase;
     border: none;
     border-radius: 300px;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    background-color: rgb(41, 47, 109);
+    color: white;
 }
 
 .btn-list {
@@ -311,11 +313,6 @@ h1 {
 
 .btn-xl {
     padding: 1rem 2rem;
-}
-
-.btn-primary {
-    background-color: rgb(41, 47, 109);
-    color: white;
 }
 
 .btn-primary:hover,
